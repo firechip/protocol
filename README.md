@@ -1,23 +1,23 @@
-# minima
+# protocol
 
-*Minima is a one-size-fits-all Jekyll theme for writers*. It's Jekyll's default (and first) theme. It's what you get when you run `jekyll new`.
+*Protocol is a one-size-fits-all Jekyll theme for writers*. It's Jekyll's default (and first) theme. It's what you get when you run `jekyll new`.
 
 ***Disclaimer:** The information here may vary depending on the version you're using. Please refer to the `README.md` bundled
 within the theme-gem for information specific to your version or by pointing your browser to the Git tag corresponding to your
-version. e.g. https://github.com/jekyll/minima/blob/v2.5.0/README.md*  
-*Running `bundle show minima` will provide you with the local path to your current theme version.*
+version. e.g. https://github.com/jekyll/protocol/blob/v2.5.0/README.md*  
+*Running `bundle show protocol` will provide you with the local path to your current theme version.*
 
 
-[Theme preview](https://jekyll.github.io/minima/)
+[Theme preview](https://jekyll.github.io/protocol/)
 
-![minima theme preview](/screenshot.png)
+![protocol theme preview](/screenshot.png)
 
 ## Installation
 
 Add this line to your Jekyll site's Gemfile:
 
 ```ruby
-gem "minima"
+gem "protocol"
 ```
 
 And then execute:
@@ -27,7 +27,7 @@ And then execute:
 
 ## Contents At-A-Glance
 
-Minima has been scaffolded by the `jekyll new-theme` command and therefore has all the necessary files and directories to have a new Jekyll site up and running with zero-configuration.
+Protocol has been scaffolded by the `jekyll new-theme` command and therefore has all the necessary files and directories to have a new Jekyll site up and running with zero-configuration.
 
 ### Layouts
 
@@ -44,13 +44,13 @@ Refers to files within the `_layouts` directory, that define the markup for your
 
 ##### *Main Heading and Content-injection*
 
-From Minima v2.2 onwards, the *home* layout will inject all content from your `index.md` / `index.html` **before** the **`Posts`** heading. This will allow you to include non-posts related content to be published on the landing page under a dedicated heading. *We recommended that you title this section with a Heading2 (`##`)*.
+From Protocol v2.2 onwards, the *home* layout will inject all content from your `index.md` / `index.html` **before** the **`Posts`** heading. This will allow you to include non-posts related content to be published on the landing page under a dedicated heading. *We recommended that you title this section with a Heading2 (`##`)*.
 
 Usually the `site.title` itself would suffice as the implicit 'main-title' for a landing-page. But, if your landing-page would like a heading to be explicitly displayed, then simply define a `title` variable in the document's front matter and it will be rendered with an `<h1>` tag.
 
 ##### *Post Listing*
 
-This section is optional from Minima v2.2 onwards.<br/>
+This section is optional from Protocol v2.2 onwards.<br/>
 It will be automatically included only when your site contains one or more valid posts or drafts (if the site is configured to `show_drafts`).
 
 The title for this section is `Posts` by default and rendered with an `<h2>` tag. You can customize this heading by defining a `list_title` variable in the document's front matter.
@@ -66,20 +66,20 @@ Refers to snippets of code within the `_includes` directory that can be inserted
   - `head.html` &mdash; Code-block that defines the `<head></head>` in *default* layout.
   - `custom-head.html` &mdash; Placeholder to allow users to add more metadata to `<head />`.
   - `header.html` &mdash; Defines the site's main header section. By default, pages with a defined `title` attribute will have links displayed here.
-  - `social.html` &mdash; Renders social-media icons based on the `minima:social_links` data in the config file.
+  - `social.html` &mdash; Renders social-media icons based on the `protocol:social_links` data in the config file.
 
 
 ### Sass
 
 Refers to `.scss` files within the `_sass` directory that define the theme's styles.
 
-  - `minima/skins/classic.scss` &mdash; The "classic" skin of the theme. *Used by default.*
-  - `minima/initialize.scss` &mdash; A component that defines the theme's *skin-agnostic* variable defaults and sass partials.
+  - `protocol/skins/classic.scss` &mdash; The "classic" skin of the theme. *Used by default.*
+  - `protocol/initialize.scss` &mdash; A component that defines the theme's *skin-agnostic* variable defaults and sass partials.
     It imports the following components (in the following order):
-    - `minima/custom-variables.scss` &mdash; A hook that allows overriding variable defaults and mixins. (*Note: Cannot override styles*)
-    - `minima/_base.scss` &mdash; Sass partial for resets and defines base styles for various HTML elements.
-    - `minima/_layout.scss` &mdash; Sass partial that defines the visual style for various layouts.
-    - `minima/custom-styles.scss` &mdash; A hook that allows overriding styles defined above. (*Note: Cannot override variables*)
+    - `protocol/custom-variables.scss` &mdash; A hook that allows overriding variable defaults and mixins. (*Note: Cannot override styles*)
+    - `protocol/_base.scss` &mdash; Sass partial for resets and defines base styles for various HTML elements.
+    - `protocol/_layout.scss` &mdash; Sass partial that defines the visual style for various layouts.
+    - `protocol/custom-styles.scss` &mdash; A hook that allows overriding styles defined above. (*Note: Cannot override variables*)
 
 Refer the [skins](#skins) section for more details.
 
@@ -90,13 +90,13 @@ Refers to various asset files within the `assets` directory.
 
   - `assets/css/style.scss` &mdash; Imports sass files from within the `_sass` directory and gets processed into the theme's
     stylesheet: `assets/css/styles.css`.
-  - `assets/minima-social-icons.svg` &mdash; A composite SVG file comprised of *symbols* related to various social-media icons.
+  - `assets/protocol-social-icons.svg` &mdash; A composite SVG file comprised of *symbols* related to various social-media icons.
     This file is used as-is without any processing. Refer [section on social networks](#social-networks) for its usage.
 
 
 ### Plugins
 
-Minima comes with [`jekyll-seo-tag`](https://github.com/jekyll/jekyll-seo-tag) plugin preinstalled to make sure your website gets the most useful meta tags. See [usage](https://github.com/jekyll/jekyll-seo-tag#usage) to know how to set it up.
+Protocol comes with [`jekyll-seo-tag`](https://github.com/jekyll/jekyll-seo-tag) plugin preinstalled to make sure your website gets the most useful meta tags. See [usage](https://github.com/jekyll/jekyll-seo-tag#usage) to know how to set it up.
 
 
 ## Usage
@@ -104,21 +104,21 @@ Minima comes with [`jekyll-seo-tag`](https://github.com/jekyll/jekyll-seo-tag) p
 Have the following line in your config file:
 
 ```yaml
-theme: minima
+theme: protocol
 ```
 
 
 ### Customizing templates
 
-To override the default structure and style of minima, simply create the concerned directory at the root of your site, copy the file you wish to customize to that directory, and then edit the file.
-e.g., to override the [`_includes/head.html `](_includes/head.html) file to specify a custom style path, create an `_includes` directory, copy `_includes/head.html` from minima gem folder to `<yoursite>/_includes` and start editing that file.
+To override the default structure and style of protocol, simply create the concerned directory at the root of your site, copy the file you wish to customize to that directory, and then edit the file.
+e.g., to override the [`_includes/head.html `](_includes/head.html) file to specify a custom style path, create an `_includes` directory, copy `_includes/head.html` from protocol gem folder to `<yoursite>/_includes` and start editing that file.
 
 The site's default CSS has now moved to a new place within the gem itself, [`assets/css/style.scss`](assets/css/style.scss).
 
-In Minima 3.0, if you only need to customize the colors of the theme, refer to the subsequent section on skins. To have your
+In Protocol 3.0, if you only need to customize the colors of the theme, refer to the subsequent section on skins. To have your
 *CSS overrides* in sync with upstream changes released in future versions, you can collect all your overrides for the Sass
-variables and mixins inside a sass file placed at `_sass/minima/custom-variables.scss` and all other overrides inside a sass file
-placed at path `_sass/minima/custom.scss`.
+variables and mixins inside a sass file placed at `_sass/protocol/custom-variables.scss` and all other overrides inside a sass file
+placed at path `_sass/protocol/custom.scss`.
 
 You need not maintain entire partial(s) at the site's source just to override a few styles. However, your stylesheet's primary
 source (`assets/css/style.scss`) should contain the following:
@@ -133,39 +133,39 @@ Therefore, your `assets/css/style.scss` should contain the following at minimum:
 ---
 ---
 
-@import "minima/skins/{{ site.minima.skin | default: 'classic' }}";
-@import "minima/initialize";
+@import "protocol/skins/{{ site.protocol.skin | default: 'classic' }}";
+@import "protocol/initialize";
 ```
 
 #### Skins
 
-Minima 3.0 supports defining and switching between multiple color-palettes (or *skins*).
+Protocol 3.0 supports defining and switching between multiple color-palettes (or *skins*).
 
 ```
 .
-├── minima.scss
-└── minima
+├── protocol.scss
+└── protocol
     └── _syntax-highlighting.scss
 ```
 
 
-A skin is a Sass file placed in the directory `_sass/minima/skins` and it defines the variable defaults related to the "color"
+A skin is a Sass file placed in the directory `_sass/protocol/skins` and it defines the variable defaults related to the "color"
 aspect of the theme. It also embeds the Sass rules related to syntax-highlighting since that is primarily related to color and
 has to be adjusted in harmony with the current skin.
 
-The default color palette for Minima is defined within `_sass/minima/skins/classic.scss`. To switch to another available skin,
-simply declare it in the site's config file. For example, to activate `_sass/minima/skins/sunrise.scss` as the skin, the setting
+The default color palette for Protocol is defined within `_sass/protocol/skins/classic.scss`. To switch to another available skin,
+simply declare it in the site's config file. For example, to activate `_sass/protocol/skins/sunrise.scss` as the skin, the setting
 would be:
 
 ```yaml
-minima:
+protocol:
   skin: sunrise
 ```
 
 As part of the migration to support skins, some existing Sass variables have been retired and some **have been redefined** as
 summarized in the following table:
 
-Minima 2.0      | Minima 3.0
+Protocol 2.0      | Protocol 3.0
 --------------- | ----------
 `$brand-color`  | `$link-base-color`
 `$grey-*`       | `$brand-*`
@@ -187,13 +187,13 @@ header_pages:
 
 ### Change default date format
 
-You can change the default date format by specifying `site.minima.date_format`
+You can change the default date format by specifying `site.protocol.date_format`
 in `_config.yml`.
 
 ```
-# Minima date format
+# Protocol date format
 # refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
-minima:
+protocol:
   date_format: "%b %-d, %Y"
 ```
 
@@ -227,7 +227,7 @@ If you don't want to display comments for a particular post you can disable them
 
 ### Author Metadata
 
-From `Minima-3.0` onwards, `site.author` is expected to be a mapping of attributes instead of a simple scalar value:
+From `Protocol-3.0` onwards, `site.author` is expected to be a mapping of attributes instead of a simple scalar value:
 
 ```yaml
 author:
@@ -237,7 +237,7 @@ author:
 
 To migrate existing metadata, update your config file and any reference to the object in your layouts and includes as summarized below:
 
-Minima 2.x    | Minima 3.0
+Protocol 2.x    | Protocol 3.0
 ------------- | -------------------
 `site.author` | `site.author.name`
 `site.email`  | `site.author.email`
@@ -246,10 +246,10 @@ Minima 2.x    | Minima 3.0
 ### Social networks
 
 You can add links to the accounts you have on other sites, with respective icon, by adding one or more of the following options in your config.
-From `Minima-3.0` onwards, the usernames are to be nested under `minima.social_links`, with the keys being simply the social-network's name:
+From `Protocol-3.0` onwards, the usernames are to be nested under `protocol.social_links`, with the keys being simply the social-network's name:
 
 ```yaml
-minima:
+protocol:
   social_links:
     twitter: jekyllrb
     github: jekyll
@@ -303,7 +303,7 @@ show_excerpts: true
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/jekyll/minima. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/jekyll/protocol. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 ## Development
 

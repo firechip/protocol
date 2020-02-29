@@ -31,7 +31,7 @@
 
   * Allow skins to be defined and customized easily (#336)
   * Drop support for scalar &#39;author&#39; configuration (#384)
-  * Place skins in `minima/skins` to clarify purpose (#479)
+  * Place skins in `protocol/skins` to clarify purpose (#479)
 
 ### Bug Fixes
 
@@ -149,7 +149,7 @@
 ### Development Fixes
 
   * Remove duplicate .sass-cache  (#71)
-  * Demo minima on GitHub Pages (#76)
+  * Demo protocol on GitHub Pages (#76)
   * Remove the Rakefile (#118)
 
 ### Documentation
@@ -175,7 +175,7 @@
 
   * priority to site.url when site.github.url is available (#46)
   * Move contents of the index.html page to the 'home' layout (#48)
-  * Use  new `absolute_url` and `relative_url` filters in minima (#57)
+  * Use  new `absolute_url` and `relative_url` filters in protocol (#57)
 
 ### Development Fixes
 
