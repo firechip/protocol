@@ -1,37 +1,20 @@
-<footer class="site-footer h-card">
-  <data class="u-url" href="{{ "/" | relative_url }}"></data>
-
-  <div class="wrapper">
-
-    <div class="footer-col-wrapper">
-      <div class="footer-col">
-        <p class="feed-subscribe">
-          <a href="{{ 'feed.xml' | relative_url }}">
-            <svg class="svg-icon orange">
-              <use xlink:href="{{ 'assets/protocol-social-icons.svg#rss' | relative_url }}"></use>
-            </svg><span>Subscribe</span>
-          </a>
+<footer class="mzp-c-footer">
+  <div class="mzp-l-content">
+    <nav class="mzp-c-footer-secondary">
+      <div class="mzp-c-footer-legal">
+        <p class="mzp-c-footer-license">
+          {{ site.description | escape }}<br/>
+          Content available under a <a rel="license" href="https://firechip.dev/licensing/website-content/">Creative Commons license</a>.
         </p>
-      {%- if site.author %}
-        <ul class="contact-list">
-          {% if site.author.name -%}
-            <li class="p-name">{{ site.author.name | escape }}</li>
-          {% endif -%}
-          {% if site.author.email -%}
-            <li><a class="u-email" href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></li>
-          {%- endif %}
+        <ul class="mzp-c-footer-terms">
+          <li><a href="https://firechip.dev/privacy/websites/">Website Privacy Notice</a></li>
+          <li><a href="https://firechip.dev/privacy/websites/#cookies">Cookies</a></li>
+          <li><a href="https://firechip.dev/about/legal/">Legal</a></li>
         </ul>
-      {%- endif %}
       </div>
-      <div class="footer-col">
-        <p>{{ site.description | escape }}</p>
-      </div>
-    </div>
-
-    <div class="social-links">
-      {%- include social.html -%}
-    </div>
-
+    </nav>
   </div>
-
 </footer>
+
+<script src="{{ 'assets/js/protocol/protocol-details.js' | relative_url }}"></script>
+<script src="{{ 'assets/js/protocol/protocol-footer.js' | relative_url }}"></script>
